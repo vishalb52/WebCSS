@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <title>My CSS Website</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+                <li class="topnav-right"><a href="#signin">Sign in</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+                                
+            </ul>
+        </nav>
+        <div class="container" id="section-1gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftSide-col" >
+                        <h1 class="large">Crazy For Radness</h1>
+                        <h1 class="large" >Made for RAWstars</h1>
+                    </div>
+                    <form>
+                        <div class="leftSide-col" >
+                            <h2>Username</h2>
+                            <input class="inputbox" name="username" type="text" placeholder="Username">
+                            <h2>Password</h2>
+                            <input class="inputbox" name="password" type="text" placeholder="Password">
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="col-6">
+                    <div class="rightSide-col">
+                        <div class="videocontainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/06Zx63UrZGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <header>
+            <h1 class="section2header">The Standards of Awareness</h1>
+        </header>
+        <div class= "cntnr">
+            <div class="row">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="box">
+                            <div class="icon">
+                                <img src="mic.jpg">
+                            </div>
+                            <label>Chat with Me</label>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="box">
+                            <div class="icon">
+                                <img src="mic.jpg">
+                            </div>
+                            <label>Build an Empire</label>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                    </div>
+                              <div class="col-4">
+                        <div class="box">
+                            <div class="icon">
+                                <img src="mic.jpg">
+                            </div>
+                            <label>Be a Rockstar</label>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="learn">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="cntrl">
+            <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="rrg">
+                    <img src="pp.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="footsy">
+            <div class="row">
+                <div class="col-3 mobileStack">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                                <div class="col-3 mobileStack">
+                    <h1>Products</h1>
+                    <ul>
+                        <li>Guitar</li>
+                        <li>T-shirts</li>
+                        <li>Mics</li>
+                    </ul>
+                </div>
+                                <div class="col-3 mobileStack">
+                    <h1>Learn More</h1>
+                    <ul>
+                        <li>Singers</li>
+                        <li>Guitarists</li>
+                        <li>Beatboxers</li>
+                    </ul>
+                </div>
+                                <div class="col-3 mobileStack">
+                    <h1>Support</h1>
+                    <ul>
+                        <li>Help</li>
+                        <li>QA</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script>
+          function dropdownMenu(){
+              var x = document.getElementById("dropdownClick");
+              if(x.className === "topnav"){
+                  x.className += " responsive";
+              }else{
+                  x.className = "topnav";
+              }
+          }  
+        </script>
+    </body>
+</html>
